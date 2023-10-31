@@ -12,4 +12,12 @@ export class ToolbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  items = [
+    { label: 'About' },
+    { label: 'Experience' },
+    { label: 'Work' },
+    { label: 'Contact' },
+    { label: 'Resume' }
+  ];
+
 }

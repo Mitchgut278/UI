@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ToolbarComponent } from './landing-page/toolbar/toolbar.component';
 
+import { MenubarModule } from 'primeng/menubar';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +16,8 @@ import { ToolbarComponent } from './landing-page/toolbar/toolbar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MenubarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
