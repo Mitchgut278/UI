@@ -8,13 +8,17 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 
 import { MenubarModule } from 'primeng/menubar';
 import { AboutPageComponent } from './about-page/about-page.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
+import { ResumePageComponent } from './resume-page/resume-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     ToolbarComponent,
-    AboutPageComponent
+    AboutPageComponent,
+    ContactPageComponent,
+    ResumePageComponent
   ],
   imports: [
     BrowserModule,

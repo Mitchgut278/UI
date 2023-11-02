@@ -16,8 +16,8 @@ export class ToolbarComponent implements OnInit {
     { label: 'About', routerLink: '/about'},
     { label: 'Experience' },
     { label: 'Work' },
-    { label: 'Contact' },
-    { label: 'Resume' }
+    { label: 'Contact', routerLink: '/contact' },
+    { label: 'Resume', routerLink: '/resume' }
   ];
 
 }
