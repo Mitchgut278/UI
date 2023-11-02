@@ -13,11 +13,16 @@ export class ToolbarComponent implements OnInit {
   }
 
   items = [
-    { label: 'About', routerLink: '/about'},
+    { label: 'About', routerLink: '/#about', command: () => { this.scrollToSection('app-about-page'); } },
     { label: 'Experience' },
-    { label: 'Work' },
-    { label: 'Contact', routerLink: '/contact' },
-    { label: 'Resume', routerLink: '/resume' }
+    { label: 'Contact', routerLink: '/#contact' },
+    { label: 'Resume', routerLink: '/#resume' }
   ];
 
+  scrollToSection(target: string) {
+    const element = document.getElementById(target);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }
