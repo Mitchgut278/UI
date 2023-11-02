@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class MainPageComponent {
 
+  onNavigate(target: string) {
+    const element = document.getElementById(target);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }

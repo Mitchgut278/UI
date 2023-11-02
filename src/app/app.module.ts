@@ -11,6 +11,7 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
 import { ResumePageComponent } from './resume-page/resume-page.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { ExperiencePageComponent } from './experience-page/experience-page.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomePageComponent } from './home-page/home-page.component';
     ContactPageComponent,
     ResumePageComponent,
     MainPageComponent,
-    HomePageComponent
+    HomePageComponent,
+    ExperiencePageComponent
   ],
   imports: [
     BrowserModule,

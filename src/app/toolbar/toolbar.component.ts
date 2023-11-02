@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 @Component({
   selector: 'app-toolbar',
   templateUrl: './toolbar.component.html',
   styleUrls: ['./toolbar.component.css']
 })
 export class ToolbarComponent implements OnInit {
+  @Output() navigate = new EventEmitter<string>();
 
   constructor() { }
 
@@ -13,10 +13,10 @@ export class ToolbarComponent implements OnInit {
   }
 
   items = [
-    { label: 'About', routerLink: '/#about', command: () => { this.scrollToSection('app-about-page'); } },
-    { label: 'Experience' },
-    { label: 'Contact', routerLink: '/#contact' },
-    { label: 'Resume', routerLink: '/#resume' }
+    { label: 'Home', routerLink: '/#home', command: () => { this.navigate.emit('home'); } },
+    { label: 'About', routerLink: '/#about', command: () => { this.navigate.emit('about'); }  },
+    { label: 'Experience', routerLink: '/#experience', command: () => { this.navigate.emit('experience'); }  },
+    { label: 'Contact', routerLink: '/#contact', command: () => { this.navigate.emit('contact'); }  }
   ];
 
   scrollToSection(target: string) {
