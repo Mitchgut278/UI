@@ -13,7 +13,7 @@ export class ToolbarComponent implements OnInit {
   }
 
   items = [
-    { label: 'About' },
+    { label: 'About', routerLink: '/about'},
     { label: 'Experience' },
     { label: 'Work' },
     { label: 'Contact' },

@@ -7,12 +7,14 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ToolbarComponent } from './landing-page/toolbar/toolbar.component';
 
 import { MenubarModule } from 'primeng/menubar';
+import { AboutPageComponent } from './about-page/about-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    AboutPageComponent
   ],
   imports: [
     BrowserModule,
