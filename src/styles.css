@@ -17,7 +17,7 @@ main {
     width: 50%;
 }
 #home {
-    background-image: url('/assets/background.jpg');
+    background-color: #1C1F23;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

@@ -9,3 +9,11 @@ h1 {
 h2 {
     color: #FF6B6B;
 }
+
+.navbar {
+    display: flex;
+}
+
+#home {
+    background-color: #1C1F23;
+}
