@@ -2,20 +2,27 @@
 
 <section id="home" class="page-container">
     <nav class="navbar">
-        <div style="width: 357.60px">
+        <div class="navgroup">
             <span style="color: white; font-size: 23px; font-family: Poppins; font-weight: 800; line-height: 20px; word-wrap: break-word">Mitch</span>
             <span style="color: #7D6AE9; font-size: 23px; font-family: Poppins; font-weight: 800; line-height: 20px; word-wrap: break-word"></span>
             <span style="color: #4E279D; font-size: 23px; font-family: Poppins; font-weight: 800; line-height: 20px; word-wrap: break-word"> Gutman</span>
         </div>
     
-        <div>buttons</div>
-        <div>settings</div>
+        <div class="buttons navgroup">
+            <a (click)="onClickScroll($event)" class="home-button">Home <i class="pi pi-angle-down" style="color: white; padding-top: 5px;"></i></a>
+            <a class="home-button">About</a>
+            <a class="home-button">Service</a>
+            <a class="home-button">Portfolio</a>
+        </div>
+        <div class="navgroup">
+
+        </div>
     </nav>
 
     <div class="about-me">
-        <h6 class="first-p">hi, my name is</h6>
-        <h1>Mitch Gutman</h1>
-        <h2>Full Stack</h2>
-        <h2>Web Developer</h2>
+        <h6>Hi, I'm Mitch Gutman</h6>
+        <h2>I'm a Full Stack Web Developer</h2>
+        
+        <p class="p-blurb">I am a full stack web developer. I can provide clean code and pixel perfect design.</p>
     </div>
 </section>

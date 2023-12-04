@@ -4,9 +4,9 @@
     height: 100vh;
 }
 
-main {
+/* main {
     padding-top: 73px;
-}
+} */
 
 .flex-container {
     display: flex;
