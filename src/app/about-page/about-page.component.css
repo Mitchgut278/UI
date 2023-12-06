@@ -1,15 +1,63 @@
+#about {
+    padding: 12rem 0;
+    background: #252729;
+}
+
+.main-container {
+    max-width: 120rem;
+    margin: auto;
+    width: 92%;
+}
+
 .main-heading {
     display: block;
     font-size: 4rem;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 3px;
+    color: #FFF;
+}
+
+.sub-heading {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    max-width: 80rem;
+    margin: auto;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.59);
 }
 
 .about-me-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     gap: 10rem;
+}
+
+.about-me-content p{
+    color: #A2A3A5;
+}
+
+.about-me-content li{
+    color: #FFF;
+}
+
+h2 {
+    color: #FFF
+}
+
+.skill-container {
+    background-color: #373B41;
+    border-radius: 6px;
+    box-shadow: 0px 25px 49px 0px rgba(0, 0, 0, 0.08);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill {
+    color: #FFF;
+    padding: 14px 32px;
 }
 
 .about-me-header {
