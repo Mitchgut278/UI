@@ -24,3 +24,38 @@
     background-position: center center;
     background-repeat: no-repeat;
 }
+
+.small-heading {
+    color: #E3E3E3;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    padding-left: 118px;
+    padding-top: 111px;
+    margin-bottom: 0px;
+}
+
+.big-heading {
+    font-family: Poppins;
+    font-size: 47.645px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 57.175px;
+    padding-left: 118px;
+}
+
+.heading-color {
+    background: var(--Color-07, linear-gradient(90deg, #4E279D -4.3%, #8561E8 45.68%, #E9878A 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heading-white {
+    background: #E3E3E3;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}   

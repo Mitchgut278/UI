@@ -12,6 +12,7 @@ import { ResumePageComponent } from './resume-page/resume-page.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ExperiencePageComponent } from './experience-page/experience-page.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ExperiencePageComponent } from './experience-page/experience-page.compo
     ResumePageComponent,
     MainPageComponent,
     HomePageComponent,
-    ExperiencePageComponent
+    ExperiencePageComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
