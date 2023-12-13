@@ -1,3 +1,22 @@
 #portfolio {
     background-color: #1C1F23;;
 }
+
+.portfolio-image-container{
+    position: relative;
+    width: 550.679px;
+    height: 405.642px;
+}
+
+.portfolio-image-container img{
+    display: block;
+    width: 100%;
+}
+
+.inner-image {
+    position: absolute;
+    width: 267.7px !important;
+    height: 166.5px;
+    top: 97px;
+    left: 143px;
+}
