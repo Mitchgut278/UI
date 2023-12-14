@@ -8,8 +8,10 @@ import { Component } from '@angular/core';
 export class PortfolioComponent {
 
   images = [
-    'path/to/image1.png',
-    'path/to/image2.png',
+    '../assets/Thumbnails/Thumbnail1.png',
+    '../assets/Thumbnails/Thumbnail2.png',
+    '../assets/Thumbnails/Thumbnail3.png',
+    '../assets/Thumbnails/Thumbnail4.png',
     // ... more images
   ];
 
