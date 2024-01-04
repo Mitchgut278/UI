@@ -1,0 +1,78 @@
+#resume {
+    background-color: #1c1f23;
+    height: 100vh;
+}
+
+.flex-container {
+    padding-left: 118px;
+    padding-top: 50px;
+}
+
+.education-section, .experience-section {
+    display: flex;
+}
+
+
+.time-blob-1 {
+    position: relative;
+    top: 20px;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #7D6AE9;
+    color: #FFFFFF;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+}
+
+.time-blob-2 {
+    position: relative;
+    top: 160px;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #9951E6;
+    border: 1px solid #5A5C5F;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+}
+
+.info-blob {
+    position: relative;
+    top: 20px;
+    width: 265px;
+    height: 180px;
+    border-radius: 5px;
+    background-color: #252729;
+    border: 1px solid #5A5C5F;
+    line-height: 20px;
+    display: flex;
+    font-family: Poppins;
+}
+
+.info-blurb {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 15px;
+}
+
+.info-blurb h3 {
+    color: #FFFFFF;
+}
+
+.info-blurb p {
+    color: #757779;
+    font-size: 13px;
+}
+
+.blob-container p {
+    margin-bottom: 0px;
+}
+
