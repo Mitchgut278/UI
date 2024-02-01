@@ -84,3 +84,13 @@ button {
     padding-left: 20px;
     padding-top: 13px;
 }
+
+.rocketship {
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    flex-shrink: 0;
+    top: -100vh;
+    left: 60vw;
+    /* top: 109px; */
+}

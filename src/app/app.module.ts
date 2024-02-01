@@ -13,6 +13,7 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ExperiencePageComponent } from './experience-page/experience-page.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     MainPageComponent,
     HomePageComponent,
     ExperiencePageComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
