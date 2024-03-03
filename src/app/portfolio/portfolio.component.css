@@ -2,41 +2,29 @@
     background-color: #222527;
 }
 
-.portfolio-image-container{
-    position: relative;
-    width: 550.679px;
-    height: 405.642px;
-    flex: 0 0 33.33%;
+.row {
+  display: flex;
+  gap: 50px;
+  flex: 1;
 }
 
-.portfolio-image-container img{
-    display: block;
-    width: 100%;
-    
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  height: 30vh;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
-.inner-image {
-    position: absolute;
-    width: 158.7px !important;
-    height: 100.5px;
-    top: 56.5px;
-    left: 84.2px;
+.portfolio-el {
+  flex: 1; /* Distribute space evenly within each row */
+  background-color: blue;
+  margin: 2px; /* Optional: Adds a little space between boxes */
 }
 
-.carousel-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .carousel {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-  
-
-
-  img {
-    width: 100%;
-    display: block;
-  }
+img {
+  width: 100%;
+  display: block;
+}

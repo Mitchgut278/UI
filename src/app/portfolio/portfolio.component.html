@@ -2,18 +2,19 @@
     <p class="small-heading">Visit My Portfolio</p>
     <div class="big-heading"><span class="heading-white">My </span><span class="heading-color">Amazing Work</span></div>
 
-    <div class="carousel-container">
-        <div class="carousel" [ngStyle]="{'transform': 'translateX(-' + (currentIndex * 33.33) + '%)'}">
-            <div *ngFor="let image of images; let i = index" class="portfolio-image-container">
-                <img src="assets/Rectangle.png" alt="">
-                <img [src]="image" class="inner-image" alt="Image {{ i + 1 }}">
-            </div>
+    <div class="portfolio-container">   
+        <div class="row">
+            <div class="portfolio-el"></div>
+            <div class="portfolio-el"></div>
+            <div class="portfolio-el"></div>
         </div>
-
-        <button class="arrow left-arrow" (click)="scrollLeft()">&#10094;</button>
-        <button class="arrow right-arrow" (click)="scrollRight()">&#10095;</button>
+        <div class="row">
+            <div class="portfolio-el"></div>
+            <div class="portfolio-el"></div>
+            <div class="portfolio-el"></div>
+        </div>
     </div>
     
     
-    
+
 </section>
