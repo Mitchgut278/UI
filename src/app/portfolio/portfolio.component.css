@@ -14,17 +14,49 @@
   gap: 50px;
   height: 30vh;
   padding-top: 5rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 30rem;
+  padding-right: 30rem;
 }
 
 .portfolio-el {
-  flex: 1; /* Distribute space evenly within each row */
+  flex: 1;
   background-color: blue;
-  margin: 2px; /* Optional: Adds a little space between boxes */
+  margin: 2px;
+  position: relative; /* Needed for absolute positioning of text-blurb */
+  display: flex;
+  align-items: center; /* Center text-blurb vertically */
+  justify-content: center; /* Center text-blurb horizontally */
+  overflow: hidden; /* Ensures no overflow outside the box */
+  transition: background-color 0.5s ease; /* Smooth transition for background */
+}
+
+.text-blurb {
+  position: absolute;
+  color: white;
+  opacity: 0; /* Hide text by default */
+  transition: opacity 0.5s ease; /* Smooth transition for text visibility */
+  text-align: center;
+  padding: 10px;
+  font-size: 10px;
+}
+
+.portfolio-el:hover {
+  background-color: rgba(0, 0, 255, 0.5); /* Fade effect on hover */
+}
+
+.portfolio-el:hover .text-blurb {
+  opacity: 1; /* Show text on hover */
 }
 
 img {
   width: 100%;
   display: block;
+}
+
+.small-heading {
+  text-align: center;
+}
+
+.big-heading {
+  text-align: center;
 }
