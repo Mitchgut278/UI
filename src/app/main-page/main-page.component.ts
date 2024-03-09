@@ -7,14 +7,16 @@ import { Component } from '@angular/core';
 })
 export class MainPageComponent {
 
-  onNavigate(target: string) {
+  handleScroll(target: string) {
+    
+    target = target.split("-")[0]
+    console.log(target)
     const element = document.getElementById(target);
     if (element) {
       const rect = element.getBoundingClientRect();
-      const offset = 73;
       const bodyRect = document.body.getBoundingClientRect().top;
       const elementPosition = rect.top - bodyRect;
-      const offsetPosition = elementPosition - offset;
+      const offsetPosition = elementPosition;
       window.scrollTo({
         top: offsetPosition,
         behavior: 'smooth' });

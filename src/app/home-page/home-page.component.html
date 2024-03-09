@@ -9,10 +9,11 @@
         </div>
     
         <div class="buttons navgroup">
-            <a (click)="onClickScroll($event)" class="home-button">Home <i class="pi pi-angle-down" style="color: white; padding-top: 5px;"></i></a>
-            <a class="home-button">About</a>
-            <a class="home-button">Service</a>
-            <a class="home-button">Portfolio</a>
+            <a id="home-button" (click)="onClickScroll($event)" class="home-button">Home <i class="pi pi-angle-down down"></i></a>
+            <a id="about-button" (click)="onClickScroll($event)" class="home-button">About <i class="pi pi-angle-down down"></i></a>
+            <a id="portfolio-button" (click)="onClickScroll($event)" class="home-button">Portfolio<i class="pi pi-angle-down down"></i></a>
+            <a id="resume-button" (click)="onClickScroll($event)" class="home-button">Resume<i class="pi pi-angle-down down"></i></a>
+            <a id="contact-button" (click)="onClickScroll($event)" class="home-button">Contact<i class="pi pi-angle-down down"></i></a>
         </div>
         <div class="navgroup">
 

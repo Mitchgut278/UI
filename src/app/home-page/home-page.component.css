@@ -16,6 +16,8 @@
 }
 
 .buttons {
+    display: flex;
+    flex-direction: row;
     position: absolute;
     left:50%;
     transform: translateX(-50%);
@@ -47,6 +49,8 @@ h2 {
 }
 
 .home-button {
+    display: flex;
+    flex-direction: row;
     background: none; 
     color: #FFF; 
     border: none; 
@@ -64,4 +68,10 @@ h2 {
 
 #home {
     background-color: #1C1F23;
+}
+
+.down {
+    color: white;
+    padding-top: 3px;
+    padding-left: 2px;
 }
