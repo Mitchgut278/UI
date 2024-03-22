@@ -1,17 +1,17 @@
-<section id="portfolio" class="page-container">
-    <p class="small-heading">Visit My Portfolio</p>
-    <div class="big-heading"><span class="heading-white">My </span><span class="heading-color">Amazing Work</span></div>
+<section id="portfolio" class="custom-container bg-2">
+  <h6 class="subtitle">Visit My portfolio</h6>
+  <h2 class="title">My <span class="gradient-text">Amazing Work</span></h2>
 
-    <div class="portfolio-container">   
-        <div class="row">
-            <div class="portfolio-el"><div class="text-blurb">Text1</div></div>
-            <div class="portfolio-el"><div class="text-blurb">Text1</div></div>
-            <div class="portfolio-el"><div class="text-blurb">Text1</div></div>
-        </div>
-        <div class="row">
-            <div class="portfolio-el"><div class="text-blurb">Text1</div></div>
-            <div class="portfolio-el"><div class="text-blurb">Text1</div></div>
-            <div class="portfolio-el"><div class="text-blurb">Text1</div></div>
-        </div>
+  <div class="portfolio-container">
+    <div *ngFor="let port of portfolio" class="portfolio">
+      <img [src]="port.image" />
+      <div>
+        <h3>{{ port.title }}</h3>
+        <p>{{ port.description }}</p>
+        <a class="btn transparent">
+          Read More <i class="pi pi-arrow-right"></i>
+        </a>
+      </div>
     </div>
+  </div>
 </section>

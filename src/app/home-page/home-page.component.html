@@ -1,28 +1,52 @@
-
-
 <section id="home" class="page-container">
-    <nav class="navbar">
-        <div class="navgroup">
-            <span style="color: white; font-size: 23px; font-family: Poppins; font-weight: 800; line-height: 20px; word-wrap: break-word">Mitch</span>
-            <span style="color: #7D6AE9; font-size: 23px; font-family: Poppins; font-weight: 800; line-height: 20px; word-wrap: break-word"></span>
-            <span style="color: #4E279D; font-size: 23px; font-family: Poppins; font-weight: 800; line-height: 20px; word-wrap: break-word"> Gutman</span>
-        </div>
-    
-        <div class="buttons navgroup">
-            <a (click)="onClickScroll($event)" class="home-button">Home <i class="pi pi-angle-down" style="color: white; padding-top: 5px;"></i></a>
-            <a class="home-button">About</a>
-            <a class="home-button">Service</a>
-            <a class="home-button">Portfolio</a>
-        </div>
-        <div class="navgroup">
-
-        </div>
-    </nav>
-
-    <div class="about-me">
-        <h6>Hi, I'm Mitch Gutman</h6>
-        <h2>I'm a Full Stack Web Developer</h2>
-        
-        <p class="p-blurb">I am a full stack web developer. I can provide clean code and pixel perfect design.</p>
+  <nav class="navbar">
+    <div class="logo">
+      James
+      <span> Ryan</span>
     </div>
+
+    <div class="links">
+      <a>Home <i class="pi pi-angle-down"></i></a>
+      <a>About <i class="pi pi-angle-down"></i></a>
+      <a>Service<i class="pi pi-angle-down"></i></a>
+      <a>Portfolio<i class="pi pi-angle-down"></i></a>
+    </div>
+
+    <div class="btns">
+      <i class="iconsax" *ngIf="darkMode" icon="moon" type="bold"></i>
+      <i class="iconsax" *ngIf="!darkMode" icon="moon" type=""></i>
+
+      <label class="switch">
+        <input type="checkbox" [checked]="!darkMode" (change)="toggleMode()" />
+        <span class="slider round"></span>
+      </label>
+
+      <i class="iconsax" icon="sun" [attr.type]="darkMode ? '' : 'bold'"></i>
+      <!-- 
+      <i class="isax {{ !darkMode ? 'bold-icon' : '' }} isax-sun-1"></i>
+      <i class="icon {{ !darkMode ? 'bold-icon' : '' }} icon-moon3"></i> -->
+
+      <a class="menu-btn"><i class="pi pi-bars"></i></a>
+    </div>
+  </nav>
+
+  <div class="banner">
+    <div class="left">
+      <h6>Hi, I'm James Ryan</h6>
+      <h2>
+        I'm <span class="gradient-text">Full-Stack</span> <br />
+        Expert Developer.
+      </h2>
+
+      <p>
+        I am a full-stack web developer. I can provide clean code and pixel
+        perfect design.
+      </p>
+
+      <a class="btn"> My Projects <i class="pi pi-arrow-right"></i> </a>
+    </div>
+    <div class="right">
+      <img [src]="personUrl" />
+    </div>
+  </div>
 </section>

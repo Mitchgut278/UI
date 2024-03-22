@@ -1,78 +1,133 @@
-#resume {
-    background-color: #1c1f23;
-    height: 100vh;
+#resume h2 {
+  margin-bottom: 53px;
 }
 
-.flex-container {
-    padding-left: 118px;
-    padding-top: 50px;
+#resume h3 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 40px;
 }
 
-.education-section, .experience-section {
-    display: flex;
+#resume .list {
+  display: flex;
+  gap: 30px;
 }
 
-
-.time-blob-1 {
-    position: relative;
-    top: 20px;
-    width: 150px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #7D6AE9;
-    color: #FFFFFF;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Poppins;
+#resume .list > div {
+  width: 50%;
 }
 
-.time-blob-2 {
-    position: relative;
-    top: 160px;
-    width: 150px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: transparent;
-    color: #9951E6;
-    border: 1px solid #5A5C5F;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Poppins;
+#resume .resume-list {
+  display: flex;
+}
+#resume .resume-list span {
+  display: block;
+  border-radius: 6px;
+  border: 1px solid #5a5c5f;
+  color: #9951e6;
+  font-weight: 600;
+  font-size: 16px;
+  min-width: 160px;
+  padding: 14px 32px;
+  text-align: center;
+  margin-right: 28px;
+  height: fit-content;
 }
 
-.info-blob {
-    position: relative;
-    top: 20px;
-    width: 265px;
-    height: 180px;
-    border-radius: 5px;
-    background-color: #252729;
-    border: 1px solid #5A5C5F;
-    line-height: 20px;
-    display: flex;
-    font-family: Poppins;
+#resume .resume-list > div {
+  border-left: 1px solid #fff;
+  padding-bottom: 15px;
+}
+#resume .resume-list > div::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  border: 1px solid #fff;
+  background-color: #1c1f23;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: -10px;
+  margin-top: 20px;
 }
 
-.info-blurb {
-    display: flex;
+#resume .resume-list .resume-card {
+  margin-left: 33px;
+  border-radius: 15px;
+  border: 1px solid #5a5c5f;
+  padding: 30px 24px;
+}
+
+#resume .resume-list .resume-card h6 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}
+#resume .resume-list .resume-card p {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 27px;
+  margin-bottom: 0;
+  color: #757779;
+}
+
+#resume .resume-list.active span {
+  background-color: #7d6ae9;
+  color: #fff;
+  border-color: #7d6ae9;
+}
+
+#resume .resume-list.active > div::before {
+  background-color: #7d6ae9;
+  border-color: #7d6ae9;
+}
+
+#testimony {
+  padding-top: 0;
+}
+#testimony .list {
+  display: flex;
+  gap: 50px;
+  margin-top: 64px;
+}
+
+#testimony .list .testimony-list {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  background-color: #252729;
+  border-radius: 15px;
+  box-shadow: 0px 25px 49px 0px rgba(0, 0, 0, 0.08);
+  padding: 30px 24px;
+  justify-content: space-between;
+}
+#testimony .list .testimony-list h6 {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+#testimony .list .testimony-list p {
+  margin: 11px 0 29px;
+  color: #757779;
+  font-size: 13px;
+  line-height: 27px;
+  font-weight: 600;
+  max-width: 90%;
+}
+
+#testimony .list .testimony-list img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+@media (max-width: 1199px) {
+  .list {
     flex-direction: column;
-    padding: 30px 15px;
+  }
+  .list > div {
+    width: 100% !important;
+  }
 }
-
-.info-blurb h3 {
-    color: #FFFFFF;
-}
-
-.info-blurb p {
-    color: #757779;
-    font-size: 13px;
-}
-
-.blob-container p {
-    margin-bottom: 0px;
-}
-

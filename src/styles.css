@@ -1,65 +1,107 @@
-/* You can add global styles to this file, and also import other style files */
-.page-container {
-    background-color: #021E3D;
-    height: 100vh;
+/* // @import "/src/assets/iconsax/style.css"; */
+
+* {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
 }
 
-/* main {
-    padding-top: 73px;
-} */
-
-h2 {
-    color: #FFF
+body {
+  background: #1c1f23;
 }
 
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+.bg-2 {
+  background-color: #252729;
 }
 
-.flex-item {
-    flex: 1;
-    width: 50%;
-}
-#home {
-    background-color: #1C1F23;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+.gradient-text {
+  background-image: linear-gradient(to right, #4e279d, #8561e8, #e9878a);
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
 }
 
-.small-heading {
-    color: #E3E3E3;
-    font-family: Poppins;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px;
-    padding-left: 118px;
-    padding-top: 111px;
-    margin-bottom: 0px;
+.btn {
+  background-color: #7d6ae9;
+  border-radius: 6px;
+  color: #fff;
+  padding: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+  width: fit-content;
+  min-height: 48px;
 }
 
-.big-heading {
-    font-family: Poppins;
-    font-size: 47.645px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 57.175px;
-    padding-left: 118px;
+.btn i {
+  font-size: 12px;
+  margin-left: 10px;
+  font-weight: 600;
 }
 
-.heading-color {
-    background: var(--Color-07, linear-gradient(90deg, #4E279D -4.3%, #8561E8 45.68%, #E9878A 100%));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.btn:hover {
+  background-color: #7d6ae9;
 }
 
-.heading-white {
-    background: #E3E3E3;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}   
+.btn.transparent {
+  background-color: transparent;
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
+  border-color: transparent !important;
+  i {
+    color: #7d6ae9;
+  }
+}
+
+img.small {
+  width: 17px;
+  height: 17px;
+}
+
+img.med {
+  width: 30px;
+  height: 30px;
+}
+
+i svg {
+  width: 16px;
+  height: 16px;
+}
+
+.icons {
+  i svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+i[icon="sun"][type="bold"] svg path {
+  fill: #ec8c56;
+  stroke: #ec8c56;
+}
+
+.custom-container {
+  padding: 6rem 5rem;
+}
+
+.subtitle {
+  color: #e3e3e3;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 63.7px;
+}
+
+@media (max-width: 1199px) {
+  .custom-container {
+    padding: 6rem 3rem;
+  }
+}

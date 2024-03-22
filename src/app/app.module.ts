@@ -14,6 +14,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { ExperiencePageComponent } from './experience-page/experience-page.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { FooterComponent } from './footer/footer.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -26,14 +27,11 @@ import { FooterComponent } from './footer/footer.component';
     HomePageComponent,
     ExperiencePageComponent,
     PortfolioComponent,
-    FooterComponent
+    FooterComponent,
+    ServicesComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    MenubarModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, MenubarModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

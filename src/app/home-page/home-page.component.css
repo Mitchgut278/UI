@@ -1,67 +1,193 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    /* background-color: #333; */
-    color: white;
+  color: #fff;
+  padding: 1.5rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  background-color: #1c1f23;
+  width: 100%;
+  z-index: 1;
+}
+.navbar .logo {
+  font-weight: bolder;
+  font-size: 23px;
+  width: 20%;
 }
 
-.about-me {
+.navbar .logo span {
+  color: #4e279d;
+}
+
+.navbar .links {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.navbar .links a {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .links a :last-child {
+  margin-right: 0;
+}
+
+.navbar .links a i {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar .btns {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar .btns i svg {
+  width: 12px;
+}
+
+.navbar .btns .switch {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 16px;
+  margin: 0 12px;
+}
+.navbar .btns .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.navbar .btns .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c6cbd9;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.navbar .btns .switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 0px;
+  bottom: -4px;
+  background-color: #7d6ae9;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.navbar .btns .switch input:checked + .slider:before {
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
+}
+
+.navbar .btns .menu-btn {
+  display: none;
+}
+
+.banner {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c1f23;
+}
+
+.banner .left,
+.banner .right {
+  width: 50%;
+  padding: 1.5rem 5rem;
+}
+
+.banner .left h6 {
+  color: #e3e3e3;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.banner .left h2 {
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 63.7px;
+  margin: 30px 0 27px;
+}
+
+.banner .left p {
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0.59;
+  margin-bottom: 50px;
+}
+
+.banner .right .circle {
+  background-color: #373b41;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.banner .right img {
+  width: 550px;
+  max-width: 100%;
+  height: 550px;
+  margin: auto;
+  display: block;
+}
+
+@media (max-width: 1199px) {
+  .navbar {
+    padding: 1.5rem 3rem;
+  }
+  .navbar .logo {
+    width: 80%;
+  }
+
+  .navbar .links {
+    display: none;
+  }
+
+  .navbar .btns .menu-btn {
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    height: 80vh;
+    margin-left: 12px;
+  }
+  .navbar .btns .menu-btn i {
+    font-size: 26px;
+  }
+
+  .banner {
     flex-direction: column;
-}
+  }
+  .banner .left,
+  .banner .right {
+    padding: 1.5rem 3rem;
+    width: 100%;
+  }
 
-.buttons {
-    position: absolute;
-    left:50%;
-    transform: translateX(-50%);
-}
-
-h6 {
-    color: #E3E3E3;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px;
-}
-
-h2 {
-    color: #FFF;
-    font-size: 55px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 63.675px
-}
-
-.p-blurb {
-    color: rgba(255, 255, 255, 0.59);
-    text-align: justify;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 27px; 
-}
-
-.home-button {
-    background: none; 
-    color: #FFF; 
-    border: none; 
-    padding: 0; 
-    margin: 0; 
-    font: inherit; 
-    cursor: pointer; 
-    text-decoration: none; 
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 20px;
-    padding: 10px;
-}
-
-#home {
-    background-color: #1C1F23;
+  .banner .left {
+    margin-top: 8rem;
+  }
 }

@@ -1,62 +1,43 @@
-#portfolio {
-    background-color: #222527;
-}
-
-.row {
+#portfolio .portfolio-container {
+  gap: 47px;
   display: flex;
-  gap: 50px;
-  flex: 1;
 }
 
-.portfolio-container {
+#portfolio .portfolio-container .portfolio {
+  width: 33%;
+  height: 100%;
+  border-radius: 15px;
+  padding: 27px 33px;
+  background-color: #252729;
+  color: #fff;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
-  gap: 50px;
-  height: 30vh;
-  padding-top: 5rem;
-  padding-left: 30rem;
-  padding-right: 30rem;
 }
 
-.portfolio-el {
+#portfolio .portfolio-container .portfolio > div {
   flex: 1;
-  background-color: blue;
-  margin: 2px;
-  position: relative; /* Needed for absolute positioning of text-blurb */
-  display: flex;
-  align-items: center; /* Center text-blurb vertically */
-  justify-content: center; /* Center text-blurb horizontally */
-  overflow: hidden; /* Ensures no overflow outside the box */
-  transition: background-color 0.5s ease; /* Smooth transition for background */
 }
 
-.text-blurb {
-  position: absolute;
-  color: white;
-  opacity: 0; /* Hide text by default */
-  transition: opacity 0.5s ease; /* Smooth transition for text visibility */
-  text-align: center;
-  padding: 10px;
-  font-size: 10px;
-}
-
-.portfolio-el:hover {
-  background-color: rgba(0, 0, 255, 0.5); /* Fade effect on hover */
-}
-
-.portfolio-el:hover .text-blurb {
-  opacity: 1; /* Show text on hover */
-}
-
-img {
+#portfolio .portfolio-container .portfolio img {
   width: 100%;
-  display: block;
+  object-fit: contain;
 }
 
-.small-heading {
-  text-align: center;
+#portfolio .portfolio-container .portfolio p {
+  font-weight: 500;
+  font-size: 13px;
+  opacity: 0.59;
+  margin-bottom: 28px;
+  line-height: 27px;
+  color: #a2a3a5;
 }
 
-.big-heading {
-  text-align: center;
+#portfolio .portfolio-container .portfolio h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+@media (max-width: 1199px) {
 }

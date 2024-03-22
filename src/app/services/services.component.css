@@ -1,0 +1,53 @@
+h2 {
+  margin-bottom: 61px;
+}
+
+.slider {
+  gap: 47px;
+  display: flex;
+}
+
+.slider .card {
+  width: 33%;
+  border-radius: 15px;
+  padding: 27px 33px;
+  background-color: #252729;
+  color: #fff;
+  /* box-shadow: 0px 25px 49px 0px rgba(0, 0, 0, 0.08); */
+  cursor: pointer;
+}
+
+.slider .card p {
+  font-weight: 500;
+  font-size: 13px;
+  opacity: 0.59;
+  margin-bottom: 28px;
+  line-height: 27px;
+  color: #a2a3a5;
+}
+
+.slider .card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 28px 0;
+}
+
+.slider .card:hover {
+  background-color: #7d6ae9;
+}
+.slider .card:hover p {
+  color: #d0d3d6;
+}
+
+.slider .card:hover .btn i {
+  color: #fff;
+}
+
+@media (max-width: 1199px) {
+  .slider {
+    flex-direction: column;
+  }
+  .slider .card {
+    width: 100%;
+  }
+}

@@ -1,72 +1,55 @@
-<section id="resume">
-    <div class="main-container">
-        <p class="small-heading">My Career Journey</p>
-        <div class="big-heading"><span class="heading-white">My </span><span class="heading-color">CV Resume</span></div>
-        <div class="flex-container">
-            <!-- <div class="flex-item">
-                <h2>Education</h2>
-                <div class="flex-container">
-                    <img src="assets/timeline.PNG" alt="">
-                </div>
-            </div> -->
-            <div class="flex-item">
-                <h2>Experience</h2>
-                <div class="flex-container">
-                    <div class="flex-container">
-                        <div class="blob-container">
-                            <div class="time-blob-1">
-                                <p>2014 - 2016</p>
-                            </div>
-                            <div class="time-blob-2">
-                                <p>2014 - 2016</p>
-                            </div>
-                        </div>
-                        <img src="assets/timeline.PNG" alt="">
-                        <div class="blob-container">
-                            <div class="info-blob">
-                                <div class="info-blurb">
-                                    <h3>Barclays</h3>
-                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to </p>
-                                </div>
-                            </div>
-                            <div class="info-blob">
-                                <div class="info-blurb">
-                                    <h3>Barclays</h3>
-                                    <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="flex-container">
-                        <div class="blob-container">
-                            <div class="time-blob-1">
-                                <p>2014 - 2016</p>
-                            </div>
-                            <div class="time-blob-2">
-                                <p>2014 - 2016</p>
-                            </div>
-                        </div>
-                        <img src="assets/timeline.PNG" alt="">
-                        <div class="blob-container">
-                            <div class="info-blob">
-                                <div class="info-blurb">
-                                    <h3>Barclays</h3>
-                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to </p>
-                                </div>
-                            </div>
-                            <div class="info-blob">
-                                <div class="info-blurb">
-                                    <h3>Barclays</h3>
-                                    <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                
-            </div>
+<section id="resume" class="custom-container">
+  <h6 class="subtitle">My Career Journey</h6>
+  <h2 class="title">My <span class="gradient-text">CV Resume</span></h2>
+
+  <div class="list">
+    <div class="">
+      <h3>Education</h3>
+      <div
+        *ngFor="let education of educations; index as i"
+        class="resume-list {{ i == 0 ? 'active' : '' }}"
+      >
+        <span>{{ education.year }}</span>
+        <div>
+          <div class="resume-card">
+            <h6>{{ education.school }}</h6>
+            <p>{{ education.details }}</p>
+          </div>
         </div>
+      </div>
     </div>
+    <div class="">
+      <h3>Experience</h3>
+      <div
+        *ngFor="let experience of experiences; index as i"
+        class="resume-list {{ i == 0 ? 'active' : '' }}"
+      >
+        <span>{{ experience.year }}</span>
+        <div>
+          <div class="resume-card">
+            <h6>{{ experience.company }}</h6>
+            <p>{{ experience.details }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="testimony" class="custom-container">
+  <h6 class="subtitle">What my clients think about me</h6>
+  <h2 class="title">What My <span class="gradient-text">Clients Says</span></h2>
+
+  <div class="list">
+    <div *ngFor="let testimony of testimonies" class="testimony-list">
+      <div class="resume-card">
+        <h6>{{ testimony.name }}</h6>
+        <p>{{ testimony.details }}</p>
+        <a class="btn transparent">
+          Learn More <i class="pi pi-arrow-right"></i>
+        </a>
+      </div>
+      <img [src]="testimony.image" />
+    </div>
+  </div>
 </section>
